@@ -67,12 +67,16 @@ img {
   font-weight: 300;
   text-align: center;
   position: relative;
-  top: 90px;
+  top: 110px;
   text-shadow: 2px 2px #ae3fb9;
 }
 
 .nav-bar {
   margin-top: -60 !important;
+}
+
+.header nav a {
+  margin-right: 60px;
 }
 
 .post {
@@ -105,6 +109,7 @@ header a {
   margin-left: 30px;
   font-size: 25px;
   font-weight: 200;
+  text-shadow: 2px 2px #ae3fb9;
 }
 
 .header h3 {
