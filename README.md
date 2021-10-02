@@ -35,7 +35,7 @@ https://minhha-pawfect-pet.herokuapp.com/
 
 <br>
 
-## GitHub repo
+## GitHub Repo
 https://github.com/minhhap/Pawfect-Pet-Hot-Or-Not
 
 
