@@ -8,7 +8,7 @@ This app is a virtual pet beauty pageant, a hot-or-not site for pets. Users can 
 
 
 ## Technologies
-Cloudinary, Express, Handlebars, Heroku, JawsDB, Jest, Multer, MySQL, Node, Sequelize
+CSS, Cloudinary, Dotenv, Express, Handlebars, Heroku, Javascript, JawsDB, Jest, Multer, MySQL, Node, Sequelize
 <br>
 
 ## Screenshots
