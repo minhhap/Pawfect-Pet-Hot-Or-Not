@@ -1,0 +1,42 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Pet Beauty Pageant</title>
+    <link rel='stylesheet' href='/styles/style.css' />
+    <script
+      src='https://kit.fontawesome.com/c663089620.js'
+      crossorigin='anonymous'
+    ></script>
+  </head>
+
+  <body>
+    <div class='wrapper'>
+      <header class='header'>
+        <h1>
+          <a href='/'>Pawfect</a>
+        </h1>
+        <h2 id='title'>Nominate Your Pet!</h2>
+        <nav>
+          {{#if loggedIn}}
+            <a href='/dashboard'>Dashboard</a>
+            <button id='logout' class='btn-no-style'>Logout</button>
+          {{else}}
+            <a href='/login'>Login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Please sign up or log in to nominate your pet and vote!
+      </footer>
+    </div>
+    {{#if loggedIn}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+  </body>
+
+</html>

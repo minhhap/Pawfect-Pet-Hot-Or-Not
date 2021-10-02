@@ -1,0 +1,27 @@
+
+<article class='post'>
+
+  <img
+    src='{{image}}'
+    alt=''
+  />
+  
+  <div class='title'>
+    <a href='/post/{{id}}'><h1>{{name}}</h1></a>
+    <span class="pet-type">&nbsp;&nbsp;({{pet_type}})</span>
+    <div class='meta votes'>
+      {{vote_count}}
+      {{format_plural 'vote' vote_count}}
+
+    </div>
+    <div>
+      <span class="comment-by">Uploaded by
+      {{user.username}}
+      on
+      {{format_date created_at}}
+    |</span>
+    <a href='/post/{{id}}'>{{comments.length}}
+      {{format_plural 'comment' comments.length}}</a>
+  </div>
+
+</article>
