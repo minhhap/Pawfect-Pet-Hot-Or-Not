@@ -9,15 +9,15 @@ This app is a virtual pet beauty pageant, a hot-or-not site for pets. Users can 
 
 
 ## Technologies
-* Using Node.js and Express.js to create RESTful APIs.
-* Using Handlebars.js as the templating engine.
-* Using MySQL and the Sequelize ORM for the database.
-* Deployed using Heroku and JawsDB (with data).
-* Using Cloundinary and Multer to post and store images in the database.
-* Using Jest testing framework.
+* Using Node.js and Express.js to create RESTful APIs
+* Using Handlebars.js as the templating engine
+* Using MySQL and the Sequelize ORM for the database
+* Deployed using Heroku and JawsDB (with data)
+* Using Cloundinary and Multer to post and store images in the database
+* Using Jest testing framework
 * Using Model - View - Controller architecture
-* Including authentication (express-session and cookies).
-* Protecting API keys and sensitive information using Dotenv.
+* Including authentication (express-session and cookies)
+* Protecting API keys and sensitive information using Dotenv
 * Built with CSS, Javascript, and HTML
 <br>
 
