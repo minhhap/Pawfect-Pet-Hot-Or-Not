@@ -4,11 +4,21 @@ This app is a virtual pet beauty pageant, a hot-or-not site for pets. Users can 
 * Users upload a picture, name, and type of their pet.
 * Users can login in to comment and vote on pets.
 * When logged in, users can access the Dashboard to edit or delete their posts.
+* The app is both mobile and desktop friendly.
 <br>
 
 
 ## Technologies
-CSS, Cloudinary, Dotenv, Express, Handlebars, Heroku, Javascript, JawsDB, Jest, Multer, MySQL, Node, Sequelize
+* Using Node.js and Express.js to create RESTful APIs.
+* Using Handlebars.js as the templating engine.
+* Using MySQL and the Sequelize ORM for the database.
+* Deployed using Heroku and JawsDB (with data).
+* Using Cloundinary and Multer to post and store images in the database.
+* Using Jest testing framework.
+* Using Model - View - Controller architecture
+* Including authentication (express-session and cookies).
+* Protecting API keys and sensitive information using Dotenv.
+* Built with CSS, Javascript, and HTML
 <br>
 
 ## Screenshots
