@@ -14,18 +14,20 @@
   <body>
     <div class='wrapper'>
       <header class='header'>
-        <h1>
-          <a href='/'>Pawfect</a>
-        </h1>
-        <h2 id='title'>Nominate Your Pet!</h2>
         <nav>
-          {{#if loggedIn}}
-            <a href='/dashboard'>Dashboard</a>
-            <button id='logout' class='btn-no-style'>Logout</button>
-          {{else}}
-            <a href='/login'>Login</a>
-          {{/if}}
+          <h1>
+            <a href='/'>Pawfect</a>
+          </h1>
+          <div>
+            {{#if loggedIn}}
+              <a href='/dashboard'>Dashboard</a>
+              <button id='logout' class='btn-no-style'>Logout</button>
+            {{else}}
+              <a href='/login'>Login</a>
+            {{/if}}
+          </div>
         </nav>
+        <h2 id='title'>Nominate Your Pet!</h2>
       </header>
       <main>
         {{{body}}}
