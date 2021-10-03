@@ -5,16 +5,17 @@ const withAuth = require('../../utils/auth');
 var multer = require("multer");
 var upload = multer({ dest: "uploads/" }); 
 const fs = require("fs");
- const cloudinary = require("cloudinary").v2;
+const cloudinary = require("cloudinary").v2;
 
- cloudinary.config({
+// cloundinary credentials 
+cloudinary.config({
    cloud_name : process.env.CLOUD_NAME,
    api_key: process.env.CLOUDINARY_API_KEY,
    api_secret: process.env.CLOUDINARY_API_SECRET
  })
 require('dotenv').config();
 
-// get all users
+// get all user posts
 router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
@@ -54,6 +55,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// get one user post
 router.get('/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -100,6 +102,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// create a post
 router.post('/', /*withAuth*/ upload.single('image'), async (req, res) => {
 console.log('file data should be here ' , req.file);
 console.log('request body ', req.body)
@@ -140,6 +143,7 @@ router.put('/upvote', withAuth, (req, res) => {
   }
 });
 
+// edit a post
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
@@ -164,6 +168,7 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
+// delete users own post
 router.delete('/:id', withAuth, (req, res) => {
   Post.destroy({
     where: {

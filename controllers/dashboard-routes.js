@@ -49,6 +49,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
+// get one single post
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
